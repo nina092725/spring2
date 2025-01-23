@@ -1,0 +1,45 @@
+<!-- <!DOCTYPE html>
+<html lang="en"xmlns:th
+="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, 
+    initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    数字を入力してください<br>
+    <form action="name-form.html"
+    th:action="@{/request-scope/input-name}"
+     method="post">
+
+    <input type="text" name="newName">
+
+    +
+
+    <form action="name-form.html"
+    th:action="@{/request-scope/input-name}" 
+    method="post">
+
+    <input type="text" name="newName2"><br>
+    <button>送信</button>
+
+    
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  </head>
+<body>
+  <form action="#" th:action="@{/request-scope/input-name}" method="post">
+    数字を入力してください<br>
+    <input type="number" name="newName">
+    +
+    <input type="number" name="newName2">
+    <button type="submit">送信</button>
+  </form>
+  <p>合計は<span th:text="${result}"></span>です。</p>
+</body>
+</html>
