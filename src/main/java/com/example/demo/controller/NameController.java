@@ -48,10 +48,10 @@ public class NameController {
             @RequestParam(value = "newName", required = false) String newName,
             @RequestParam(value = "newName2", required = false) String newName2,
             Model model) {
-        int num1 = StringUtils.isEmpty(newName) ? 0 : Integer.parseInt(newName);
-        int num2 = StringUtils.isEmpty(newName2) ? 0 : Integer.parseInt(newName2);
-        int result = num1 + num2;
-        model.addAttribute("result", result);
+        // int num1 = StringUtils.isEmpty(newName) ? 0 : Integer.parseInt(newName);
+        // int num2 = StringUtils.isEmpty(newName2) ? 0 : Integer.parseInt(newName2);
+        // int result = num1 + num2;
+        // model.addAttribute("result", result);
         return "result-name-scope";
     }
     
